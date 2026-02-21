@@ -46,8 +46,9 @@ export function generateHTML(courses) {
 const userInput = process.argv.slice(2).join(' ');
 
 if (!userInput) {
+  // Example command shown to help users understand the expected date format
   console.log(
-    'No command provided. Try: course add --name JS --duration 4weeks'
+    'No command provided. Example: course add --name JS --year 2024 --month 3 --date 15' 
   );
   process.exit(0);
 }
