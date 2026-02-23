@@ -9,7 +9,7 @@ export function loadTraineeData() {
 
 
 JSON.parse will convert the JSON string into a JavaScript.
- */
+ 
 export function saveTraineeData(updatedTrainees) {
   const traineeSavedData = JSON.stringify(updatedTrainees, null, 2);
   fs.writeFileSync(TRAINEE_DATA_FILE_PATH, traineeSavedData, 'utf-8');
